@@ -32,4 +32,19 @@
   outline: none;
   color: #bbb;
   border: 3px solid #bbb;
+  font-size: 30px;
+  font-weight: bold;
+}
+.image {
+  object-fit: contain;
+  animation: move 3s infinite ease alternate;
+}
+
+@keyframes move {
+  from {
+    transform: translateY(-15px);
+  }
+  to {
+    transform: translateY(0px) scale(1.03);
+  }
 }
